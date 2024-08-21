@@ -22,9 +22,7 @@ export class SubscriptionRepository{
             id INT AUTO_INCREMENT PRIMARY KEY,
             paymentDate date NOT NULL,
             typeID INT NOT NULL,
-            userID INT NOT NULL,
-            FOREIGN KEY (typeID) REFERENCES subscriptionType(ID),
-            FOREIGN KEY (userID) REFERENCES user(ID)
+            userID INT NOT NULL
         )`;
 
         try {
