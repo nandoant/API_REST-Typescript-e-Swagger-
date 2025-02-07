@@ -7,44 +7,42 @@ yarn-error.log
 # Build output
 dist/
 build/
-out/
 
-# Environment variables
-.env
-.env.local
-.env.*.local
-
-# IDE and editor files
-.idea/
+# IDE
 .vscode/
-*.sublime-project
-*.sublime-workspace
+.idea/
 
-# Operating System
+# Environment files
+.env
+
+# Logs
+*.log
+logs/
+
+# OS files
 .DS_Store
 Thumbs.db
 
-# Logs
-logs
-*.log
-
-# Coverage directory used by tools like istanbul
-coverage/
-
-# TypeScript cache
+# TypeScript
 *.tsbuildinfo
 
-# Optional npm cache directory
+# Generated files
+src/route/routes.ts
+swagger.json
+
+# Database
+*.sql
+*.sqlite
+
+# Test coverage
+coverage/
+
+# npm/yarn
 .npm
-
-# Optional eslint cache
-.eslintcache
-
-# Optional REPL history
-.node_repl_history
-
-# Output of 'npm pack'
-*.tgz
-
-# Yarn Integrity file
 .yarn-integrity
+package-lock.json
+yarn.lock
+
+# Temp files
+tmp/
+temp/
